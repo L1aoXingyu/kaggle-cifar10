@@ -43,12 +43,14 @@ python3 train.py --bs=128 --use_gpu=True
 就可以进行baseline训练, 其中 `bs` 表示 batch size, `use_gpu` 表示是否使用 gpu，还有一些额外的参数，请阅读 `train.py`，在训练过程中，会自动创建`checkpoints`文件夹，训练的模型会自动保存在`checkpoints`中。
 
 ## 提交结果
-训练完成 baseline 之后，我们的模型会保存在 `checkpoints` 中，我们可以 load 我们想要的模型，进行结果的提交
+训练完成 baseline 之后，我们的模型会保存在 `checkpoints` 中，我们可以 load 我们想要的模型，进行结果的提交，运行下面的代码
 
 ```
-python3 submission --model_path='checkpoints/model_best.pth.tar'
+python3 submission.py --model_path='checkpoints/model_best.pth.tar'
 ```
+
+我们会在本地创建一个预测的结果 `submission.csv`，我们将这个文件提交到 kaggle，可以得到类似下面的比赛结果。
 
 <div align=center>
-<img src='https://ws2.sinaimg.cn/large/006tNbRwly1fwa9n14kymj30rf061aa5.jpg' width='600'>
+<img src='https://ws2.sinaimg.cn/large/006tNbRwly1fwa9n14kymj30rf061aa5.jpg' width='800'>
 </div>
