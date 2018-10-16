@@ -63,7 +63,6 @@ def main():
 
     args = parser.parse_args()
     cudnn.benchmark = True
-    os.environ['CUDA_VISIBLE_DEVICES'] = '2'
     submission(args)
 
 
