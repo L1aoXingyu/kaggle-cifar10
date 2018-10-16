@@ -17,9 +17,9 @@ git clone https://github.com/L1aoXingyu/kaggle-cifar10.git
 ## 数据下载
 通过[比赛界面](https://www.kaggle.com/c/cifar-10)根据图片中的显示进行数据下载
 
-<center>
+<div align=center>
 <img src='https://ws1.sinaimg.cn/large/006tNbRwly1fwai15kmgvj31he13aq5k.jpg' width='500'>
-</center>
+</div>
 
 然后在项目的根目录中创建`data`文件夹，将下载好的4个文件放入`data`中，接着运行下面的命令来得到预处理之后的数据
 
@@ -49,6 +49,6 @@ python3 train.py --bs=128 --use_gpu=True
 python3 submission --model_path='checkpoints/model_best.pth.tar'
 ```
 
-<center>
+<div align=center>
 <img src='https://ws2.sinaimg.cn/large/006tNbRwly1fwa9n14kymj30rf061aa5.jpg' width='600'>
-</center>
+</div>
