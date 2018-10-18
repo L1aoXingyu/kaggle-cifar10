@@ -56,10 +56,10 @@ def submission(args):
 
 def main():
     parser = argparse.ArgumentParser(description='cifar10 model testing')
-    parser.add_argument('--model-path', type=str, default='checkpoints/model_best.pth.tar',
+    parser.add_argument('--model_path', type=str, default='checkpoints/model_best.pth.tar',
                         help='training batch size')
     parser.add_argument('--bs', type=int, default=128, help='testing batch size')
-    parser.add_argument('--use-gpu', type=bool, default=True, help='decide if use gpu training')
+    parser.add_argument('--use-gpu', action='store_true', help='decide if use gpu training')
 
     args = parser.parse_args()
     cudnn.benchmark = True
