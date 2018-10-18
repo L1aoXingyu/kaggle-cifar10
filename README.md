@@ -47,7 +47,7 @@ python3 train.py --bs=128 --use_gpu # gpu 训练
 训练完成 baseline 之后，我们的模型会保存在 `checkpoints` 中，我们可以 load 我们想要的模型，进行结果的提交，运行下面的代码
 
 ```
-python3 submission.py --model_path='checkpoints/model_best.pth.tar'
+python3 submission.py --model_path='checkpoints/model_best.pth.tar' --use_gpu
 ```
 
 我们会在本地创建一个预测的结果 `submission.csv`，我们将这个文件提交到 kaggle，可以得到类似下面的比赛结果。
