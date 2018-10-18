@@ -53,11 +53,11 @@ def main():
     parser.add_argument('--wd', type=float, default=3e-4, help='training weight decay')
     parser.add_argument('--momentum', type=float, default=0.9, help='sgd momentum training')
     parser.add_argument('--epochs', type=int, default=100, help='training epochs')
-    parser.add_argument('--print-interval', type=int, default=300, help='how many iterations to print')
-    parser.add_argument('--eval-step', type=int, default=20, help='how many epochs to evaluate')
-    parser.add_argument('--save-step', type=int, default=20, help='how many epochs to save model')
-    parser.add_argument('--save-dir', type=str, default='checkpoints', help='save model directory')
-    parser.add_argument('--use-gpu', type=bool, default=True, help='decide if use gpu training')
+    parser.add_argument('--print_interval', type=int, default=300, help='how many iterations to print')
+    parser.add_argument('--eval_step', type=int, default=20, help='how many epochs to evaluate')
+    parser.add_argument('--save_step', type=int, default=20, help='how many epochs to save model')
+    parser.add_argument('--save_dir', type=str, default='checkpoints', help='save model directory')
+    parser.add_argument('--use_gpu', action='store_true', help='decide if use gpu training')
 
     args = parser.parse_args()
     cudnn.benchmark = True

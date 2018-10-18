@@ -37,7 +37,8 @@ cd ..; python3 preprocess.py;
 运行下面的代码
 
 ```
-python3 train.py --bs=128 --use_gpu=True
+python3 train.py --bs=128  # cpu 训练
+python3 train.py --bs=128 --use_gpu # gpu 训练
 ```
 
 就可以进行baseline训练, 其中 `bs` 表示 batch size, `use_gpu` 表示是否使用 gpu，还有一些额外的参数，请阅读 `train.py`，在训练过程中，会自动创建`checkpoints`文件夹，训练的模型会自动保存在`checkpoints`中。
